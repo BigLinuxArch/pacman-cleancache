@@ -1,0 +1,5 @@
+#!/bin/bash
+
+if ! grep -q KeepNumPackages /etc/pacman.conf; then
+    paccache -rvk1 >/dev/null
+fi
