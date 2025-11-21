@@ -5,13 +5,13 @@ pkgdesc="Automatic clean cache packages from pacman"
 depends=('pacman-contrib')
 # makedepends=('')
 # conflicts=('')
-pkgver=$(date +%y.%m.%d)
-pkgrel=$(date +%H%M)
+pkgver=25.03.30
+pkgrel=1946
 arch=('any')
 license=('GPL3')
 url="https://github.com/biglinux/$pkgname"
 provides=("$pkgname")
-source=("git+${url}.git")
+source=("git+${url}.git#branch=stable-2025-03-30_16-44")
 md5sums=('SKIP')
 if [ -e "${pkgname}.install" ];then
     install=${pkgname}.install
